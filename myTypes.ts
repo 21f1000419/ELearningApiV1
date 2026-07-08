@@ -324,6 +324,7 @@ export interface Gallery {
   locale?: string | null;
   description?: string;
   web_medias?: WebMedia[] | null;
+  order?: number;
 };
 
 export interface HelpAndSupport {

@@ -1904,6 +1904,7 @@ export interface ApiGalleryGallery extends Struct.CollectionTypeSchema {
     singularName: 'gallery';
     pluralName: 'galleries';
     displayName: 'Gallery';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1914,6 +1915,7 @@ export interface ApiGalleryGallery extends Struct.CollectionTypeSchema {
       'oneToMany',
       'api::web-media.web-media'
     >;
+    order: Schema.Attribute.Integer;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;

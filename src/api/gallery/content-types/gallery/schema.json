@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gallery",
     "pluralName": "galleries",
-    "displayName": "Gallery"
+    "displayName": "Gallery",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,6 +19,9 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::web-media.web-media"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }
